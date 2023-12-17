@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgba(240, 230, 140, 0.539);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.cal{
+    background-color: rgb(24, 24, 24);
+    border: 2px solid white;
+    width:30vw;
+    height: 90vh;
+    border-radius: 5%;
+
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+
+}
+.display{
+    background:transparent;
+    height:25vh;
+    padding:10px;
+    width:95%;
+    direction: ltr;
+    text-align: right;
+    border:none;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid white;
+    font-size:40px;
+}
+.keypad{
+    height: 70vh;
+    color:white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap:3vh;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.last{
+    grid-column: 1/3;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:8vh;
+    height:8vh;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid white;
+}
+@media only screen and (max-width:1000px){
+    .cal{
+        width:100vw;
+        height:100vh;
+    }
+    .keypad{
+        grid-row-gap:4vh;
+    }
+    .btn{
+        width:9vh;
+        height: 9vh;
+    }
+    *{
+        font-size:24px;
+    }
+    .display{
+        font-size:50px;
+    }
+    .cal{
+        border-radius:0px;
+        border: none;
+    }
+}
+.top{
+    background-color: rgb(114, 107, 107);
+}
+.aside{
+    background-color: rgb(216, 147, 19);
+}
+.side{
+    background-color: rgb(46, 46, 46);
+}
